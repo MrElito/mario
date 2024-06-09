@@ -1,30 +1,168 @@
-<!doctype html>
- 2 <html lang="en-us">
- 3   <head>
- 4     <meta charset="utf-8">
- 5     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- 6     <title>DOOM</title>
- 7     <style type="text/css">
- 8       .dosbox-container { width: 320px; height: 200px; }
- 9       .dosbox-container > .dosbox-overlay { background: url(https://js-dos.com/cdn/DOOM.png); }
-10     </style>
-11   </head>
-12   <body>
-13     <div id="dosbox"></div>
-14     <br/>
-15     <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
-16     
-17     <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
-18     <script type="text/javascript">
-19       var dosbox = new Dosbox({
-20         id: "dosbox",
-21         onload: function (dosbox) {
-22           dosbox.run("upload/DOOM-@evilution.zip", "./doom");
-23         },
-24         onrun: function (dosbox, app) {
-25           console.log("App '" + app + "' is runned");
-26         }
-27       });
-28     </script>
-29   </body>
-30 </html>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <html lang="en">
+    <meta name="description" content="MF-Doom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF DOOM</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" />
+    <script src="https://kit.fontawesome.com/893a019cfa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"> <img src="logos.png" alt="logo"></a> 
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li> <a href="#bio" data-value="bio">Bio</a> </li>
+                <li> <a href="#bottom-section" data-value="bottom-section">Music</a> </li>
+                <li> <a href="#music" data-value="music">Video</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+ <section id="hero">
+     <div class="hero-image">
+        <h1>The best MC with no chain ya ever <a href="#music" class="button cta-button">heard</a> </h1>
+    </div> 
+
+ </section>
+
+ <section id="bio">
+     <div class="title">
+        <h1>MF DOOM—Masked Visionary, Rhyme-Bending Supervillain, and Hip-Hop Legend</h1>
+        </div>
+     <div class="row">
+         <div class="column">
+            <div class="stage-pic">
+                <img src="doom2.jpeg" alt="bio">   
+            </div>
+        </div>
+        <div class="column">
+            <p> Daniel Dumile (January 9, 1971 – October 31, 2020), best known by 
+            his stage name MF Doom or simply Doom (both stylized in all caps), was a British-American rapper and record producer. Noted for his intricate wordplay, signature metal mask, and "supervillain" stage persona, Dumile became a major figure of underground hip hop in the 2000s. After his death, Variety described him as one of the scene's "most celebrated, unpredictable and enigmatic figures".</p>
+            <p>Born in London, Dumile moved to Long Island, New York, at a young age. He began his career in 1988 as a member of KMD, performing under the name Zev Love X; the group disbanded in 1993 upon the death of member DJ Subroc, Dumile's brother. After a hiatus, Dumile reemerged in the late 1990s, performing at open mic events while wearing a metal mask resembling that of Marvel Comics supervillain Doctor Doom, who is depicted on the cover of his 1999 debut solo album Operation: Doomsday. He adopted the MF Doom persona and rarely made unmasked public appearances thereafter.</p>
+            <p>Between 2003 and 2005, Dumile released four solo studio albums, including the critically acclaimed Mm..Food (2004), and two collaborative albums, using the MF Doom moniker and the pseudonyms King Geedorah and Viktor Vaughn. His sixth and final solo album, Born Like This, was released in 2009. Though he lived the majority of his life in the United States, he never gained American citizenship and was denied reentry in 2010 after returning from an international tour. He relocated to London and, in his final years, worked mostly in collaboration with various other rappers.</p>
+        </div>
+    </div>
+    <span class="img-container">
+        <img src="logo.png"alt="bio-logo" loading="lazy">
+    </span>
+</section>
+
+ <section id="bottom-section">
+    <div class="title">
+        <h2>Music</h2>
+   </div>
+   <div class="container">
+    <div>
+        <h3>Operation Doomsday</h3>
+        <img class="album" src="Albums/MF-DOOM-Operation.jpeg"loading="lazy" alt="Doomsday">
+    </div>
+    <div>
+        <h3>Mm..Food?</h3>
+          <img class="album" src="Albums/Mmfood.jpg" loading="lazy" alt="mmfood">
+       </div>
+    <div>
+        <h3>Born Like This</h3>
+        <img class="album" src="Albums/Born-like-this.jpg" loading="lazy" alt="Born-like-this">
+    </div>
+    <div>
+        <h3>Take Me To Your Leader</h3>
+            <h4>(as King Geedorah)</h4>
+        <img class="album" src="Albums/King_Geedorah_-_Take_Me_to_Your_Leader_album_cover.jpg" loading="lazy" alt="leader">
+    </div>
+    <div>
+        <h3>Vaudeville Villain</h3>
+        <h4>(as Viktor Vaughn)</h4>
+        <img class="album" src="Albums/Vaudevillevillain.jpg" loading="lazy" alt="Vaudevillevillain">
+    </div>
+    <div>
+        <h3>Venomous Villain</h3>
+        <h4>(as Viktor Vaughn)</h4>
+        <img class="album" src="Albums/Venomousvillain.jpg" loading="lazy" alt="Venomousvillain">
+    </div>
+    <div>
+        <h3>Madvillainy</h3>
+        <h4>(w/Madlib as Madvillain)</h4>
+        <img class="album" src="Albums/Madvillainy_cover.png" loading="lazy" alt="Madvillainy">
+    </div>
+    <div>
+        <h3>Operation Doomsday</h3>
+        <h4>(w/MF Grimm)</h4>
+        <img class="album" src="Albums/Mfdoommfgri_specialhe_101b.jpg" loading="lazy" alt="special-herbs">
+    </div>
+    <div>
+        <h3>The Mouse and the Mask</h3>
+        <h4>(w/Danger Mouse as Danger Doom)</h4>
+        <img class="album" src="Albums/Dangerdoom.jpg" loading="lazy" alt="Dangerdoom">
+    </div>
+    <div>
+        <h3>Key to the Kuffs</h3>
+        <h4>(w/Jneiro Jarel as JJ Doom)</h4>
+        <img class="album" src="Albums/Key_To_The_Kuffs_Album_Cover.jpeg" loading="lazy" alt="Key_To_The_Kuffs_Album_Cover">
+    </div>
+    <div>
+        <h3>NehruvianDoom</h3>
+        <h4>(w/Bishop Nehru as NehruvianDoom)</h4>
+        <img class="album" src="Albums/NehruvianDOOM.jpg" loading="lazy" alt="NehruvianDOOM">
+    </div>
+    <div>
+        <h3>Czarface Meets Metal Face</h3>
+        <h4>(w/Czarface)</h4>
+        <img class="album" src="Albums/Czarface_Meets_Metal_Face.jpeg" loading="lazy" alt="Czarface_Meets_Metal_Face">
+    </div>
+    </div>
+    <div class="title">
+        <h2>Listen</h2>
+   </div>
+    <div class="row">
+        <div class="column">
+            <iframe title="Top songs" src="https://open.spotify.com/embed/artist/2pAWfrd7WFF3XhVt9GooDL" style="width:100%;max-width:660px;overflow:hidden" height="450" frameborder="0"  allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="column">
+            <iframe title="Mmfood listen" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-same-origin allow-scripts" src="https://embed.music.apple.com/us/album/mm-food-deluxe-edition/1558162066"></iframe>
+        </div>
+   </div>
+</section>
+
+<!----The following section was re-created from his actual website. -->
+<section id="music">
+    <div class="row">
+        <div class="column2">
+            <div class="youtube-player" data-id="rpaonSDPw7Y"></div>
+        </div>
+        <div class="column2">
+            <div class="youtube-player" data-id="WW-9TcDTKa8"></div>
+        </div>
+        <div class="column2">
+            <div class="youtube-player" data-id="jTCI_bqMi_w"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="row">
+        <div class="column2">
+            <h2>Search</h2>
+            <h2>FAQ</h2>
+        </div>
+        <div class="column2">
+            <label for="email">Join the MF DOOM Email List</label>
+            <input type="email" id="email"><i class="fas fa-envelope"></i></input>  
+        </div>
+        <div class="column2">
+            <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+		    <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+		    <a href="#" aria-label="Google"><i class="fab fa-google-play"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
